@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system — Dr J Sumanth Reddy
+   Same vibe as the original HTML: navy + sky blue, Playfair Display + DM Sans.
+   All colors HSL. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 14%;
+
+    /* Brand */
+    --navy: 220 74% 16%;            /* #0a1f44 */
+    --navy-deep: 222 79% 9%;        /* #05112a */
+    --blue: 222 76% 42%;            /* #1a4bbd */
+    --sky: 221 83% 53%;             /* #2563eb */
+    --accent-cyan: 199 89% 48%;     /* #0ea5e9 */
+    --pale: 214 95% 93%;            /* #dbeafe */
+    --soft-blue: 210 100% 97%;      /* #f0f7ff */
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 74% 16%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 20% 47%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 74% 16%), hsl(222 76% 42%) 50%, hsl(199 89% 48%));
+    --gradient-soft: linear-gradient(180deg, hsl(210 100% 97%), hsl(0 0% 100%));
+    --gradient-card: linear-gradient(135deg, hsl(214 95% 93%), hsl(204 94% 94%));
+
+    /* Shadows */
+    --shadow-soft: 0 8px 30px -8px hsl(220 74% 16% / 0.12);
+    --shadow-card: 0 18px 48px -16px hsl(220 74% 16% / 0.22);
+    --shadow-glow: 0 4px 28px hsl(221 83% 53% / 0.45);
+
+    /* Motion */
+    --ease-smooth: cubic-bezier(0.77, 0, 0.18, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: "Playfair Display", Georgia, serif; }
+  .gradient-hero { background: var(--gradient-hero); }
+  .gradient-soft { background: var(--gradient-soft); }
+  .gradient-card { background: var(--gradient-card); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+}
+
+/* Slide animations */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-eye {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50%      { transform: translateY(-24px) rotate(4deg); }
+}
+.animate-fade-up { animation: fade-up 0.8s ease both; }
+.animate-float-eye { animation: float-eye 7s ease-in-out infinite; }
+
+/* Hide scrollbar on horizontal strips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }

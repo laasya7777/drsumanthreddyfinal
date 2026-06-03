@@ -1,0 +1,68 @@
+{
+  "slug": "cataracts-cloudy-vision",
+  "title": "Cataracts: Why Your Vision Gets Cloudy",
+  "excerpt": "Cataracts cloud the lens gradually. Learn the stages, risk factors, and how modern surgery restores crystal-clear vision.",
+  "category": "Lens Disorders",
+  "readTime": "5 min read",
+  "date": "Jun 3, 2026",
+  "icon": "🔍",
+  "gradient": "from-purple-500 via-pink-500 to-red-500",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "paragraphs": [
+        "A cataract is a clouding of the eye's natural lens, which lies behind the iris and pupil. The lens is normally clear and focuses light onto the retina at the back of the eye. When a cataract develops, the lens becomes opaque, like looking through frosted glass.",
+        "Cataracts develop slowly over months or years. They're the leading cause of vision loss in older adults, but are highly treatable with modern surgery."
+      ]
+    },
+    {
+      "heading": "Types of Cataracts",
+      "paragraphs": [
+        "1. Age-related (Nuclear Sclerotic) — most common; develops as proteins in the lens clump together over decades.",
+        "2. Secondary Cataracts — caused by eye injury, inflammation, medications (like steroids), or other eye diseases.",
+        "3. Congenital Cataracts — present from birth; may be genetic or due to maternal infection during pregnancy.",
+        "4. Traumatic Cataracts — result from eye injury."
+      ]
+    },
+    {
+      "heading": "Common Symptoms",
+      "list": [
+        "Blurred or cloudy vision",
+        "Difficulty seeing at night",
+        "Glare and halos around lights",
+        "Fading colors",
+        "Frequent changes in eyeglass prescription",
+        "Double vision in one eye"
+      ]
+    },
+    {
+      "heading": "Risk Factors",
+      "list": [
+        "Age (over 60)",
+        "Prolonged sun exposure",
+        "Smoking",
+        "Excessive alcohol use",
+        "Diabetes",
+        "Eye injury or inflammation"
+      ]
+    },
+    {
+      "heading": "Treatment",
+      "paragraphs": [
+        "Early stages may benefit from stronger eyeglasses, better lighting, and UV protection. When cataracts significantly affect daily life, surgery is highly effective. The cloudy lens is removed and replaced with an artificial intraocular lens (IOL)."
+      ]
+    },
+    {
+      "callout": {
+        "title": "When to see a doctor",
+        "items": [
+          "Vision becomes noticeably blurry",
+          "Difficulty driving at night",
+          "Colors look faded or yellowed",
+          "Glare bothers you significantly",
+          "Vision interferes with daily activities"
+        ]
+      }
+    }
+  ]
+}

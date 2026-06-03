@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Dr J Sumanth Reddy – Eye Specialist & Surgeon | Hyderabad</title>
+    <meta name="description" content="Dr J Sumanth Reddy — fellowship-trained eye specialist with 15+ years experience and 25,000+ successful surgeries. Cataract, LASIK, glaucoma & more in Hyderabad." />
+    <meta name="author" content="Dr J Sumanth Reddy" />
+    <link rel="canonical" href="/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <meta property="og:title" content="Dr J Sumanth Reddy – Eye Specialist & Surgeon" />
+    <meta property="og:description" content="15+ years of excellence in eye care. Book your appointment today." />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <script>
+      // Suppress noisy TypeErrors from external share-modal.js when its target element is missing.
+      // This prevents an uncaught error from breaking the app during development.
+      window.addEventListener('error', function (e) {
+        try {
+          if (e && e.filename && e.filename.includes('share-modal.js') && e.message && e.message.includes("Cannot read properties of null")) {
+            console.warn('Suppressed share-modal.js DOM error:', e.message);
+            e.preventDefault && e.preventDefault();
+          }
+        } catch (err) {
+          // ignore
+        }
+      });
+    </script>
+    <!-- Fallback containers for external share-modal scripts to attach to safely -->
+    <div id="share-modal" style="display:none"></div>
+    <div id="shareModal" style="display:none"></div>
+    <div id="share-modal-root" style="display:none"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
